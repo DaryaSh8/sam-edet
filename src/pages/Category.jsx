@@ -3,7 +3,6 @@ import { ProductCard } from "../components/products/ProductCard";
 import { useGetCategoryByIdQuery } from "../features/categoriesApi";
 import { useParams } from "react-router-dom";
 import { useGetProductsByCategoryIdQuery } from "../features/productsApi";
-import categories from "../components/leftSideBar/Categories";
 
 const Category = () => {
   const { categoryId } = useParams();

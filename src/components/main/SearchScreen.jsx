@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useSearchProductsQuery } from "../../features/productsApi";
 import { selectSearchTerm } from "../../features/searchSlice";
 
-const SearchScreen = ({}) => {
+const SearchScreen = () => {
   const searchTerm = useSelector(selectSearchTerm);
   const { data: searchProducts = [] } = useSearchProductsQuery(searchTerm);
 
